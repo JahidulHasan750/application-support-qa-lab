@@ -138,3 +138,21 @@ The final persistence check was consistent with DummyJSON's documented simulated
 The **tested functionality** behaved consistently with expected or documented behavior, and no defect was identified in the scenarios covered.
 
 This was a targeted manual API test and does not claim complete coverage of the DummyJSON API.
+
+
+---
+
+## Supporting Evidence
+
+Selected Postman screenshots are included as supporting evidence for the tests documented above.
+
+| Evidence | Test |
+|---|---|
+| [01 - Valid Login](evidence/01-valid-login.png) | Successful authentication (`200 OK`) |
+| [02 - Invalid Login](evidence/02-invalid-login.png) | Invalid credentials rejected (`400 Bad Request`) |
+| [03 - Recipe Creation](evidence/03-recipe-create.png) | Simulated recipe creation (`201 Created`) |
+| [04 - Recipe Persistence Check](evidence/04-recipe-persistence-check.png) | Created recipe ID not persisted (`404 Not Found`) |
+| [05 - Post Update](evidence/05-post-update.png) | Simulated PUT update (`200 OK`) |
+| [06 - Post Update Persistence](evidence/06-post-update-persistence.png) | Follow-up GET returned original title |
+| [07 - Comment Delete](evidence/07-comment-delete.png) | Simulated deletion with `isDeleted: true` |
+| [08 - Todo Validation](evidence/08-todo-validation.png) | Missing required data rejected (`400 Bad Request`) |
