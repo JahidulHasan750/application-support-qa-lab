@@ -1,0 +1,4 @@
+url,status_code,status
+https://jsonplaceholder.typicode.com/users/1,200,OK
+https://httpbin.org/status/404,404,NOT OK
+http://this-domain-should-not-exist-928374.invalid,,CONNECTION FAILED
